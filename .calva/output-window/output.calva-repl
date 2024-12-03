@@ -1,0 +1,612 @@
+; This is the Calva REPL Window.
+; It's just a file, really, with some special treatment from Calva.
+; Use it as a REPL input prompt if you like. (When the REPL is connected.)
+; TIPS: The keyboard shortcut `ctrl+alt+o r` shows and focuses this window
+; Please see https://calva.io/repl-window/ for more info.
+; Happy coding! ♥️
+
+; TIPS: As with any Clojure file when the REPL is connected:
+; - `alt+enter` evaluates the current top level form.
+; - `ctrl+enter` evaluates the current form.
+; Special for this file:
+; - `alt+up` and `alt+down` traverse up and down the REPL command history
+;    when the cursor is after the last contents at the prompt
+; 
+; See also the Calva Inspector: https://calva.io/inspector/
+
+PLEASE NOTE
+We will update the default location of this file.
+The new default location will be
+  "<projectRootPath>/.calva/repl.calva-repl"
+For now the legacy path is used by default.
+To give yourself a smooth transition, you can opt in
+to the change, by configuring this setting as false:
+  "calva.useLegacyReplWindowPath"
+and then add "**/.calva/repl.calva-repl" to your ".gitignore" file.
+
+
+This file is configured as the output destination for all REPL output.
+You can configure this with the setting:
+  "calva.outputDestinations"
+
+
+; Connecting ...
+; Reading port file: file:///d%3A/code/clojure/lab2/lab2/.nrepl-port ...
+; No nrepl port file found.
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉user꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉user꞉> 
+#'lab2.core/integr
+clj꞉lab2.core꞉> 
+#'lab2.core/f
+clj꞉lab2.core꞉> 
+#'lab2.core/integrate-f
+clj꞉lab2.core꞉> 
+; 0.34375
+nil
+clj꞉lab2.core꞉> 
+; 2.6875
+nil
+clj꞉lab2.core꞉> 
+; Numerical integration (trapezoidal): 2.6875
+; Analytical integration: 8/3
+; Difference: 0.020833333333333037
+nil
+clj꞉lab2.core꞉> 
+#'lab2.core/integr
+clj꞉lab2.core꞉> 
+#'lab2.core/f
+clj꞉lab2.core꞉> 
+#'lab2.core/integrate-f
+clj꞉lab2.core꞉> 
+; Numerical integration (trapezoidal): 2.6875
+; Analytical integration: 8/3
+; Difference: 0.020833333333333037
+nil
+clj꞉lab2.core꞉> 
+#'lab2.core/integr
+clj꞉lab2.core꞉> 
+#'lab2.core/integrate-f
+clj꞉lab2.core꞉> 
+; Numerical integration (trapezoidal): 2.6700000000000004
+; Analytical integration: 8/3
+; Difference: 0.0033333333333334103
+nil
+clj꞉lab2.core꞉> 
+; Execution error (ArityException) at nrepl.middleware.interruptible-eval/evaluate$fn$fn (interruptible_eval.clj:87).
+; Wrong number of args (2) passed to: lab2.core/integr
+clj꞉lab2.core꞉> 
+#'lab2.core/f
+clj꞉lab2.core꞉> 
+#'lab2.core/integr
+clj꞉lab2.core꞉> 
+#'lab2.core/f
+clj꞉lab2.core꞉> 
+#'lab2.core/integrate-f
+clj꞉lab2.core꞉> 
+6.335
+clj꞉lab2.core꞉> 
+9.005
+clj꞉lab2.core꞉> 
+2.6700000000000004
+clj꞉lab2.core꞉> 
+#'lab2.core/integr
+clj꞉lab2.core꞉> 
+#'lab2.core/integr
+clj꞉lab2.core꞉> 
+#'lab2.core/integr-no-memo
+clj꞉lab2.core꞉> 
+#'lab2.core/f
+clj꞉lab2.core꞉> 
+#'lab2.core/integrate-memo
+clj꞉lab2.core꞉> 
+#'lab2.core/integrate-no-memo
+clj꞉lab2.core꞉> 
+; Result: 2.6875
+; "Elapsed time: 144.8792 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.6875
+; "Elapsed time: 141.4002 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.6875
+; "Elapsed time: 0.4422 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.6875
+; "Elapsed time: 1.1174 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.6875
+; "Elapsed time: 147.0491 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.6875
+; "Elapsed time: 0.612 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.6875
+; "Elapsed time: 0.4639 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.6875
+; "Elapsed time: 0.3335 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.6875
+; "Elapsed time: 136.1457 msecs"
+nil
+clj꞉lab2.core꞉> 
+#'lab2.core/f
+clj꞉lab2.core꞉> 
+; Result: 2.6875
+; "Elapsed time: 149.1027 msecs"
+nil
+clj꞉lab2.core꞉> 
+#'lab2.core/integrate-memo
+clj꞉lab2.core꞉> 
+#'lab2.core/integrate-no-memo
+clj꞉lab2.core꞉> 
+; Execution error (ClassCastException) at lab2.core/f (REPL:30).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉lab2.core꞉> 
+#'lab2.core/f
+clj꞉lab2.core꞉> 
+#'lab2.core/integrate-memo
+clj꞉lab2.core꞉> 
+#'lab2.core/integrate-no-memo
+clj꞉lab2.core꞉> 
+; Result: 2.6875
+; "Elapsed time: 0.4244 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.6875
+; "Elapsed time: 0.5638 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.6875
+; "Elapsed time: 0.3975 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.6875
+; "Elapsed time: 0.4291 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.6875
+; "Elapsed time: 0.4145 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.6875
+; "Elapsed time: 1.0615 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.6875
+; "Elapsed time: 0.391 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.6875
+; "Elapsed time: 0.3645 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.6875
+; "Elapsed time: 0.3752 msecs"
+nil
+clj꞉lab2.core꞉> 
+#object[lab2.core$integr$fn__1593 0x7708aa7 "lab2.core$integr$fn__1593@7708aa7"]
+clj꞉lab2.core꞉> 
+#'lab2.core/integrate-memo
+clj꞉lab2.core꞉> 
+#'lab2.core/integrate-no-memo
+clj꞉lab2.core꞉> 
+; Result: 2.666700000000001
+; "Elapsed time: 1.1486 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.666700000000001
+; "Elapsed time: 0.8987 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.666700000000001
+; "Elapsed time: 1.2159 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.666700000000001
+; "Elapsed time: 0.7137 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.666700000000001
+; "Elapsed time: 0.773 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.666700000000001
+; "Elapsed time: 0.6001 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.666700000000001
+; "Elapsed time: 0.5729 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.666700000000001
+; "Elapsed time: 0.5613 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.666700000000001
+; "Elapsed time: 0.6149 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.666700000000001
+; "Elapsed time: 0.7361 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.666700000000001
+; "Elapsed time: 0.7029 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.666700000000001
+; "Elapsed time: 0.6524 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.666700000000001
+; "Elapsed time: 0.4665 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.666700000000001
+; "Elapsed time: 0.431 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.666700000000001
+; "Elapsed time: 0.3935 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 2.666700000000001
+; "Elapsed time: 0.5827 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 333333.33500000014
+; "Elapsed time: 4.0339 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 3.3333333333350006E11
+; "Elapsed time: 175.9693 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 3.3333333333350006E11
+; "Elapsed time: 1159.861 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 3.3333333333350006E11
+; "Elapsed time: 1068.7631 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 3.3333333333350006E11
+; "Elapsed time: 824.8486 msecs"
+nil
+clj꞉lab2.core꞉> 
+#'lab2.core/integrate-memo
+clj꞉lab2.core꞉> 
+#'lab2.core/integrate-no-memo
+clj꞉lab2.core꞉> 
+; Result: 3.3333333333350006E11
+; "Elapsed time: 1201.4061 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 3.3333333333350006E11
+; "Elapsed time: 727.0795 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 3.3333333333350006E11
+; "Elapsed time: 646.2663 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 3.3333333333350006E11
+; "Elapsed time: 647.3225 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 3.3333333333350006E11
+; "Elapsed time: 137.254 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 3.3333333333350006E11
+; "Elapsed time: 133.9204 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 3.3333333333350006E11
+; "Elapsed time: 140.1949 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 3.3333333333350006E11
+; "Elapsed time: 126.2611 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 3.3333333333350006E11
+; "Elapsed time: 130.632 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 3.3333333333350006E11
+; "Elapsed time: 137.3345 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 3.3333333333350006E11
+; "Elapsed time: 181.3263 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 3.3333333333350006E11
+; "Elapsed time: 123.5026 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 3.3333333333350006E11
+; "Elapsed time: 661.3911 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 3.3333333333350006E11
+; "Elapsed time: 1085.6243 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 3.3333333333350006E11
+; "Elapsed time: 766.4039 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 3.3333333333350006E11
+; "Elapsed time: 791.4846 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 3.3333333333350006E11
+; "Elapsed time: 843.6484 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 3.3333333333350006E11
+; "Elapsed time: 786.2525 msecs"
+nil
+clj꞉lab2.core꞉> 
+#'lab2.core/f
+clj꞉lab2.core꞉> 
+#'lab2.core/memoized-integr
+clj꞉lab2.core꞉> 
+#'lab2.core/memo-integrate-f
+clj꞉lab2.core꞉> 
+; Result: 333333.33500000014
+; "Elapsed time: 10.1189 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 333333.33500000014
+; "Elapsed time: 0.2902 msecs"
+nil
+clj꞉lab2.core꞉> 
+; Result: 333333.33500000014
+; "Elapsed time: 0.2881 msecs"
+nil
+clj꞉lab2.core꞉> 
+#'lab2.core/-main
+clj꞉lab2.core꞉> 
+; First calculation (f, no cache):
+; Result: 333333.33500000014
+; "Elapsed time: 9.4713 msecs"
+; 
+; Second calculation (f, cached):
+; Result: 333333.33500000014
+; "Elapsed time: 0.0917 msecs"
+; 
+; First calculation (g, no cache):
+; Result: 9999.999999999998
+; "Elapsed time: 11.2823 msecs"
+; 
+; Second calculation (g, cached):
+; Result: 9999.999999999998
+; "Elapsed time: 0.0969 msecs"
+; 
+; First calculation (h, no cache):
+; Result: 5099.999999999999
+; "Elapsed time: 13.4438 msecs"
+; 
+; Second calculation (h, cached):
+; Result: 5099.999999999999
+; "Elapsed time: 0.381 msecs"
+nil
+clj꞉lab2.core꞉> 
+#'lab2.core/-main
+clj꞉lab2.core꞉> 
+; nREPL connection failed: Error: read ECONNRESET
+; Failed connecting.
+; nREPL Connection was closed
+; Connecting using "Generic" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Connecting ...
+; Reading port file: file:///d%3A/code/clojure/lab2/.nrepl-port ...
+; Using host:port localhost:28304 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉lab2.core꞉> 
+nil
+clj꞉lab2.core꞉> 
+; Execution error (ClassCastException) at lab2.core/eval2460$fact (form-init4419024084886974731.clj:46).
+; class clojure.lang.Symbol cannot be cast to class java.lang.Number (clojure.lang.Symbol is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+clj꞉lab2.core꞉> 
+; Execution error (ClassCastException) at lab2.core/eval2466$fact (form-init4419024084886974731.clj:46).
+; class clojure.lang.Symbol cannot be cast to class java.lang.Number (clojure.lang.Symbol is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+clj꞉lab2.core꞉> 
+; "Elapsed time: 0.0659 msecs"
+362880
+clj꞉lab2.core꞉> 
+; "Elapsed time: 0.0472 msecs"
+; "Elapsed time: 0.0243 msecs"
+; nREPL connection failed: Error: read ECONNRESET
+; Failed connecting.
+; nREPL Connection was closed
+; Connecting using "Generic" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Connecting ...
+; Reading port file: file:///d%3A/code/clojure/lab2/.nrepl-port ...
+; Using host:port localhost:28349 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉lab2.core꞉> 
+; "Elapsed time: 0.0602 msecs"
+; "Elapsed time: 0.1364 msecs"
+(1 1 2 6 24 120 720 5040 40320 362880)
+clj꞉lab2.core꞉> 
+; "Elapsed time: 0.0385 msecs"
+; "Elapsed time: 0.0122 msecs"
+(1 1 2 6 24 120 720 5040 40320 362880)
+clj꞉lab2.core꞉> 
+; "Elapsed time: 0.0501 msecs"
+; "Elapsed time: 0.0209 msecs"
+(1 1 2 6 24 120 720 5040 40320 362880)
+clj꞉lab2.core꞉> 
+; "Elapsed time: 0.0606 msecs"
+; Execution error (IndexOutOfBoundsException) at lab2.core/eval2480 (form-init8249531549904377855.clj:53).
+; null
+clj꞉lab2.core꞉> 
+; "Elapsed time: 0.3134 msecs"
+; "Elapsed time: 0.0739 msecs"
+362880
+clj꞉lab2.core꞉> 
+; "Elapsed time: 0.0517 msecs"
+; "Elapsed time: 0.0821 msecs"
+362880
+clj꞉lab2.core꞉> 
+; Execution error (ArithmeticException) at java.lang.Math/multiplyExact (Math.java:1033).
+; long overflow
+clj꞉lab2.core꞉> 
+; Execution error (ArithmeticException) at java.lang.Math/multiplyExact (Math.java:1033).
+; long overflow
+clj꞉lab2.core꞉> 
+; Execution error (ArithmeticException) at java.lang.Math/multiplyExact (Math.java:1033).
+; long overflow
+clj꞉lab2.core꞉> 
+; "Elapsed time: 2.9558 msecs"
+; "Elapsed time: 193.6764 msecs"
+402387260077093773543702433923003985719374864210714632543799910429938512398629020592044208486969404800479988610197196058631666872994808558901323829669944590997424504087073759918823627727188732519779505950995276120874975462497043601418278094646496291056393887437886487337119181045825783647849977012476632889835955735432513185323958463075557409114262417474349347553428646576611667797396668820291207379143853719588249808126867838374559731746136085379534524221586593201928090878297308431392844403281231558611036976801357304216168747609675871348312025478589320767169132448426236131412508780208000261683151027341827977704784635868170164365024153691398281264810213092761244896359928705114964975419909342221566832572080821333186116811553615836546984046708975602900950537616475847728421889679646244945160765353408198901385442487984959953319101723355556602139450399736280750137837615307127761926849034352625200015888535147331611702103968175921510907788019393178114194545257223865541461062892187960223838971476088506276862967146674697562911234082439208160153780889893964518263243671616762179168909779911903754031274622289988005195444414282012187361745992642956581746628302955570299024324153181617210465832036786906117260158783520751516284225540265170483304226143974286933061690897968482590125458327168226458066526769958652682272807075781391858178889652208164348344825993266043367660176999612831860788386150279465955131156552036093988180612138558600301435694527224206344631797460594682573103790084024432438465657245014402821885252470935190620929023136493273497565513958720559654228749774011413346962715422845862377387538230483865688976461927383814900140767310446640259899490222221765904339901886018566526485061799702356193897017860040811889729918311021171229845901641921068884387121855646124960798722908519296819372388642614839657382291123125024186649353143970137428531926649875337218940694281434118520158014123344828015051399694290153483077644569099073152433278288269864602789864321139083506217095002597389863554277196742822248757586765752344220207573630569498825087968928162753848863396909959826280956121450994871701244516461260379029309120889086942028510640182154399457156805941872748998094254742173582401063677404595741785160829230135358081840096996372524230560855903700624271243416909004153690105933983835777939410970027753472000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000N
+clj꞉lab2.core꞉> 
+#'lab2.core/naturals
+clj꞉lab2.core꞉> 
+#'lab2.core/naturals
+clj꞉lab2.core꞉> 
+11
+clj꞉lab2.core꞉> 
+#'lab2.core/naturals
+clj꞉lab2.core꞉> 
+11
+clj꞉lab2.core꞉> 
+#'lab2.core/naturals
+clj꞉lab2.core꞉> 
+; Execution error (ClassCastException) at lab2.core/eval2544 (form-init8249531549904377855.clj:59).
+; class clojure.lang.LazySeq cannot be cast to class clojure.lang.IFn (clojure.lang.LazySeq and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉lab2.core꞉> 
+11
+clj꞉lab2.core꞉> 
+#'lab2.core/naturals-unlazy
+clj꞉lab2.core꞉> 
+; Execution error (IllegalArgumentException) at lab2.core/eval2548 (form-init8249531549904377855.clj:64).
+; Don't know how to create ISeq from: clojure.lang.Var$Unbound
+clj꞉lab2.core꞉> 
+; Execution error (IndexOutOfBoundsException) at lab2.core/eval2552 (form-init8249531549904377855.clj:64).
+; null
+clj꞉lab2.core꞉> 
+; Syntax error compiling def at (d:\code\clojure\lab2\src\lab2\core.clj:56:1).
+; Too many arguments to def
+clj꞉lab2.core꞉> 
+; Syntax error compiling def at (d:\code\clojure\lab2\src\lab2\core.clj:56:1).
+; Too many arguments to def
+clj꞉lab2.core꞉> 
+#'lab2.core/naturals
+clj꞉lab2.core꞉> 
+#'lab2.core/naturals1
+clj꞉lab2.core꞉> 
+; Execution error (IllegalArgumentException) at lab2.core/eval2554 (form-init8249531549904377855.clj:62).
+; Don't know how to create ISeq from: clojure.lang.Var$Unbound
+clj꞉lab2.core꞉> 
+#'lab2.core/naturals
+clj꞉lab2.core꞉> 
+11
+clj꞉lab2.core꞉> 
+#'lab2.core/fibs
+clj꞉lab2.core꞉> 
+; Execution error (ClassCastException) at lab2.core/eval2564 (form-init8249531549904377855.clj:60).
+; class clojure.lang.LazySeq cannot be cast to class clojure.lang.IFn (clojure.lang.LazySeq and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉lab2.core꞉> 
+#'lab2.core/fibs
+clj꞉lab2.core꞉> 
+; Execution error (ClassCastException) at lab2.core/eval2570 (form-init8249531549904377855.clj:60).
+; class clojure.lang.LazySeq cannot be cast to class clojure.lang.IFn (clojure.lang.LazySeq and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉lab2.core꞉> 
+55
+clj꞉lab2.core꞉> 
+1
+clj꞉lab2.core꞉> 
+1
+clj꞉lab2.core꞉> 
+2
+clj꞉lab2.core꞉> 
+3
+clj꞉lab2.core꞉> 
+5
+clj꞉lab2.core꞉> 
+8
+clj꞉lab2.core꞉> 
+13
+clj꞉lab2.core꞉> 
+1
+clj꞉lab2.core꞉> 
+(0 4 16 36 64 100 144 196 256 324)
+clj꞉lab2.core꞉> 
+(0 4 16 36 64 100 144 196 256 324)
+clj꞉lab2.core꞉> 
+(0 4 16 36 64 100 144 196 256 324 400 484 576 676 784 900 1024 1156 1296 1444)
+clj꞉lab2.core꞉> 
+(0 4 16 36 64 100 144 196 256 324)
+clj꞉lab2.core꞉> 
+#'lab2.core/trapezoidal-stream
+clj꞉lab2.core꞉> 
+#'lab2.core/stream-integr
+clj꞉lab2.core꞉> 
+; Syntax error compiling at (d:\code\clojure\lab2\src\lab2\core.clj:45:22).
+; Unable to resolve symbol: f in this context
+clj꞉lab2.core꞉> 
+#'lab2.core/f
+clj꞉lab2.core꞉> 
+#'lab2.core/integral-stream
+clj꞉lab2.core꞉> 
+#'lab2.core/memoized-integr
+clj꞉lab2.core꞉> 
+#'lab2.core/integr
+clj꞉lab2.core꞉> 
+; 0.33499999999999996
+; "Elapsed time: 3.5153 msecs"
+nil
+clj꞉lab2.core꞉> 
+; 1.9545000000000008
+; "Elapsed time: 1.302 msecs"
+nil
+clj꞉lab2.core꞉> 
+; 2.2895000000000008
+; "Elapsed time: 0.4187 msecs"
+nil
+clj꞉lab2.core꞉> 
+#'lab2.core/trapezoidal-stream
+clj꞉lab2.core꞉> 
+#'lab2.core/f
+clj꞉lab2.core꞉> 
+#'lab2.core/stream
+clj꞉lab2.core꞉> 
+; ([0 0] [0.1 5.000000000000001E-4] [0.2 0.0030000000000000005] [0.30000000000000004 0.009500000000000003] [0.4 0.022000000000000006] [0.5 0.04250000000000001] [0.6 0.07300000000000001] [0.7 0.1155] [0.7999999999999999 0.172] [0.8999999999999999 0.2445])
+nil
+clj꞉lab2.core꞉> 
+; nREPL connection failed: Error: read ECONNRESET
+; Failed connecting.
+; nREPL Connection was closed
