@@ -15,7 +15,6 @@
   (memoize (integr func h)))
 
 (defn trapezoidal-stream [func h]
-  "Creates a lazy sequence of cumulative integrals using the trapezoidal method."
   (let [partial-integr (integr func h)]
 
     (defn next-point [start current-integral]
